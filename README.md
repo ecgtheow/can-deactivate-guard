@@ -30,7 +30,7 @@ import { CanDeactivateGuard } from
 '@ecgtheowltd/can-deactivate-guard';
 
 const routes: Routes = [{
-  path: 'guarded-route,
+  path: 'guarded-route',
   component: 'GuardedComponent',
   canDeactivate: [
     CanDeactivateGuard
