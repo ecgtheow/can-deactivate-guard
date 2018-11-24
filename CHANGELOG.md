@@ -1,3 +1,15 @@
+## CanDeactivateGuard - v1.0.1 (24/11/2018)
+
+### New Features:
+
+* Fix typo in README.md
+
+## CanDeactivateGuard - v1.0.0 (24/11/2018)
+
+### New Features:
+
+* Initial release
+
 ## CanDeactivateGuard - v0.0.1 (19/11/2018)
 
 ### New Features:
