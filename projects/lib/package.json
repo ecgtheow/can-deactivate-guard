@@ -1,8 +1,25 @@
 {
-  "name": "lib",
+  "name": "@ecgtheowltd/can-deactivate-guard",
   "version": "0.0.1",
+  "description": "A boilerplate CanDeactivate guard for Angular routing",
+  "author": "Dick Porter <dick@ecgtheow.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecgtheow/can-deactivate-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ecgtheow/can-deactivate-guard/issues"
+  },
+  "homepage": "https://github.com/ecgtheow/can-deactivate-guard",
+  "keywords": [
+    "angular",
+    "typescript",
+    "routing",
+    "candeactivate"
+  ],
+  "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0"
+    "@angular/common": "^6.0.0 || ^7.0.0",
+    "@angular/core": "^6.0.0 || ^7.0.0"
   }
 }

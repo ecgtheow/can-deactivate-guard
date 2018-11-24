@@ -1,14 +1,12 @@
 {
   "name": "can-deactivate-guard",
+  "description": "A boilerplate CanDeactivate guard for Angular routing",
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "package": "ng build lib && cp README.md CHANGELOG.md LICENCE dist/lib",
+    "release": "np"
   },
   "private": false,
   "dependencies": {
@@ -43,6 +41,7 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
+    "np": "*",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",

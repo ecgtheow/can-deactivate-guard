@@ -1,28 +1,68 @@
 # CanDeactivateGuard
-A boilerplate CanDeactivate guard for Angular routing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+> A boilerplate CanDeactivate guard for Angular routing
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+$ yarn add @ecgtheowltd/can-deactivate-guard
+```
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- In `src/app/app.module.ts` add:
 
-## Build
+``` typescript
+import { CanDeactivateGuard } from
+'@ecgtheowltd/can-deactivate-guard';
+...
+@NgModule({
+  ...
+  providers: [CanDeactivateGuard],
+  ...
+});
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- In `src/app/app-routing.module.ts` add:
 
-## Running unit tests
+```typescript
+import { CanDeactivateGuard } from
+'@ecgtheowltd/can-deactivate-guard';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+const routes: Routes = [{
+  path: 'guarded-route,
+  component: 'GuardedComponent',
+  canDeactivate: [
+    CanDeactivateGuard
+  ]
+}];
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- In (for example) `src/app/guarded.component.ts` add:
 
-## Further help
+``` typescript
+import { CanComponentDeactivate } from
+'@ecgtheowltd/can-deactivate-guard';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+  ...
+})
+export class GuardedComponent implements CanComponentDeactivate {
+  ...
+  canDeactivate (): boolean /* or Observable<boolean> or
+    Promise<boolean> */ {
+    if (/* Check if component should be deactivated */) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  ...
+}
+
+```
+
+For more information, see
+[The Angular Routing & Navigation guide](https://angular.io/guide/router#candeactivate-handling-unsaved-changes)
+
