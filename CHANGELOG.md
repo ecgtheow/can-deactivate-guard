@@ -1,3 +1,9 @@
+## CanDeactivateGuard - v1.0.2 (21/7/2019)
+
+### New Features:
+
+* Support Angular 8
+
 ## CanDeactivateGuard - v1.0.1 (24/11/2018)
 
 ### New Features:
