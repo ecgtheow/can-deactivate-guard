@@ -8,7 +8,10 @@
     "build": "ng build lib && cp README.md CHANGELOG.md LICENCE dist/lib",
     "test": "ng test lib --no-watch",
     "lint": "ng lint lib",
-    "release": "np --contents dist/lib"
+    "release": "np"
+  },
+  "np": {
+    "contents": "dist/lib"
   },
   "private": false,
   "dependencies": {
