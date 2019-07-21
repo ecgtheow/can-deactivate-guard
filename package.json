@@ -2,7 +2,7 @@
   "name": "@ecgtheowltd/can-deactivate-guard",
   "description": "A boilerplate CanDeactivate guard for Angular routing",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "build": "ng build lib && cp README.md CHANGELOG.md LICENCE dist/lib",
