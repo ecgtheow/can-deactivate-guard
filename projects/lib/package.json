@@ -1,6 +1,6 @@
 {
   "name": "@ecgtheowltd/can-deactivate-guard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A boilerplate CanDeactivate guard for Angular routing",
   "author": "Dick Porter <dick@ecgtheow.com>",
   "repository": {
