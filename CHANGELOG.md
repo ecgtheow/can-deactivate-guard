@@ -1,3 +1,10 @@
+## CanDeactivateGuard - v1.0.5 (23/8/2020)
+
+### New Features:
+
+* Support Angular 10
+* Fix dependencies with security alerts
+
 ## CanDeactivateGuard - v1.0.2 (21/7/2019)
 
 ### New Features:
