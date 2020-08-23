@@ -20,7 +20,7 @@ describe('CanDeactivateGuard', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   beforeEach(() => {
-    service = TestBed.get(CanDeactivateGuard);
+    service = TestBed.inject(CanDeactivateGuard);
   });
 
   it('should be created', () => {
